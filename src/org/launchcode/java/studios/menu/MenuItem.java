@@ -18,12 +18,6 @@ public class MenuItem {
 
     public String toString(){
         return "Item Name: " + getName() + "\nDescription: " + getDescription() + "\nCategory: " + getCategory() + "\nPrice: " + getPrice() + "\n";
-
-       /* if (getDateAdded().equals(getLastUpdated())) {
-            System.out.println("***NEW ITEM***");
-        }
-
-        */
     }
 
     public String getName(){

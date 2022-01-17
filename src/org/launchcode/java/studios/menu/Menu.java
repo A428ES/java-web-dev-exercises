@@ -10,14 +10,36 @@ public class Menu {
         this.lastUpdated = new Date();
     }
 
+    /*
+    public boolean equals(Object toBeCompared) {
+        if (toBeCompared == null) {
+            return false;
+        }
+
+        if (toBeCompared.getClass() != getClass()) {
+            return false;
+        }
+
+        MenuItem indieItem = (MenuItem) toBeCompared;
+        return indieItem.getName() == indieItem.getName();
+    }*/
+
     public void printMenu(HashMap<String, MenuItem> theMenuItems){
         for (Map.Entry<String, MenuItem> indieItem : theMenuItems.entrySet()) {
+            if (indieItem.getValue().getDateAdded().equals(getLastUpdated())) {
+                System.out.println("***NEW ITEM***");
+            }
+
             System.out.println(indieItem.getValue());
         }
     }
 
     public void addItem(String aName, double aPrice, String aDescription, String aCategory){
-        menuItems.put(aName.toLowerCase(), new MenuItem(aName, aPrice, aDescription, aCategory));
+        if(getMenuItems(aName) == null) {
+            menuItems.put(aName.toLowerCase(), new MenuItem(aName, aPrice, aDescription, aCategory));
+        } else {
+            System.out.println("|| CANNOT ADD DUPLICATE ENTRY FOR " + aName + " ||");
+        }
     }
 
     public void removeItem(String aName){

@@ -14,6 +14,7 @@ public class Main {
         theMenu.addItem("Pancake and Eggs", 19.99, "3 Buttermilk Pancakes and 2 Eggs with Bacon", "Breakfast");
         theMenu.addItem("Cheeseburger", 29.99, "1 Patty Cheeseburger with American cheese and a side of fries", "Dinner");
         theMenu.addItem("Tacos", 109.99, "1 Taco with ground beef and shredded lettuce", "Dinner");
+        theMenu.addItem("Tacos", 109.99, "1 Taco with ground beef and shredded lettuce", "Dinner");
 
         System.out.println("[STEP 1. PRINTING ENTIRE MENU]" + nLine);
 
