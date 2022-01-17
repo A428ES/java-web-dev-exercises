@@ -34,7 +34,7 @@ public class Main {
 
         System.out.println(nLine);
 
-        System.out.println("[STEP 4. PRINT MENU WITH DELETED ITEM]" + nLine);
+        System.out.println("[STEP 4. PRINT MENU WITHOUT DELETED ITEM]" + nLine);
 
         theMenu.printMenu(theMenu.getMenuItems());
     }
