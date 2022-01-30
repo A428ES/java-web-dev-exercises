@@ -5,7 +5,7 @@ public class HouseCat extends Cat {
     private String species = "Felis catus";
 
     public HouseCat(String aName, double aWeight) {
-        super(aWeight);
+       // super(aWeight);
         name = aName;
     }
 
